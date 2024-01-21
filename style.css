@@ -1,0 +1,140 @@
+@font-face {
+    font-family: swapnil;
+    src: url(./GeneralSans-Regular.otf);
+}
+
+*{
+    margin: 0;
+    padding:0;
+    font-family: swapnil;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    overflow: hidden;
+    
+  
+}
+main{
+    width: 100%;
+    height: auto;
+}
+#cursor-dot {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #fff; /* Set the color of the dot */
+    border-radius: 50%;
+    pointer-events: none; /* Ensure the dot doesn't interfere with cursor events */
+    z-index: 1000; /* Set a high z-index to make sure the dot appears above other elements */
+    transition:ease-in-out;
+    transition-delay: 0.0111s;
+}
+#hero{
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: auto;
+    padding: 20px 40px;
+    /* background-color: blue; */
+    color:#fff;
+   
+}
+nav h1{
+    font-size: 19px;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 200;
+    padding-top: 5px;
+    padding-left: 9px;
+    color: aliceblue;
+}
+#heading{
+    margin-top: 40px;
+
+}
+#heading h1{
+    margin-left: 30px;
+    line-height: 1;
+    font-size: 10vw;
+    font-weight:900;
+    opacity: .6;
+
+}
+#heading #secondh1{
+    margin-left: 194px;
+}
+.blocktext{
+    width: fit-content;
+    
+    text-align: right
+
+}
+#heading2{
+    margin-top: 100px;
+    padding-right: 30px;
+
+}
+#heading2 h5{
+    text-transform: uppercase;
+    font-size: 1vw;
+    text-align: right;
+    line-height: 2.5;
+    font-weight:600;
+
+}
+footer{
+    /* background-color: aquamarine;     */
+    height: 10vh;
+    color:#fff;
+    width: 100%;
+    position: absolute;
+    bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 36px;
+    gap: 5px;
+}
+footer a{
+    padding-left: 41px;
+    text-transform: uppercase;
+    font-size: 2vh;
+}
+#diva{
+    
+    width: inherit;
+    height: inherit;
+}
+#diva2{
+    width: inherit;
+    height: inherit;
+}
+
+ .circle{
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 50px;
+    height: 25px;
+    color: #000000;
+    /* border: solid 1px; */
+    border-radius: 50%;
+    background-color: #c8c8c8;
+
+}
+ .circle:hover{
+    cursor: pointer;
+ }
