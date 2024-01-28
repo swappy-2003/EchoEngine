@@ -11,7 +11,7 @@
 }
 body{
     width: 100%;
-    overflow: hidden;
+   height: 100%;
     
   
 }
@@ -20,7 +20,7 @@ main{
     height: auto;
 }
 #cursor-dot {
-    position: fixed;
+    position: relative;
     width: 10px;
     height: 10px;
     background-color: #fff; /* Set the color of the dot */
@@ -28,13 +28,14 @@ main{
     pointer-events: none; /* Ensure the dot doesn't interfere with cursor events */
     z-index: 1000; /* Set a high z-index to make sure the dot appears above other elements */
     transition:ease-in-out;
-    transition-delay: 0.0111s;
+    transition-delay: 0.5ms;
+    
 }
 #hero{
     color: aliceblue;
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color:#000000;
 }
 nav{
     display: flex;
@@ -92,7 +93,7 @@ a{
     font-weight:600;
 
 }
-footer{
+#chotafooter{
     /* background-color: aquamarine;     */
     height: 10vh;
     color:#fff;
@@ -102,7 +103,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-right: 36px;
+    padding-right: 37px;
     gap: 5px;
 }
 footer a{
@@ -111,11 +112,12 @@ footer a{
     font-size: 2vh;
 }
 #diva{
-    
+    text-transform: uppercase;
     width: inherit;
     height: inherit;
 }
 #diva2{
+    text-transform: uppercase;
     width: inherit;
     height: inherit;
 }
@@ -135,6 +137,89 @@ footer a{
     background-color: #c8c8c8;
 
 }
- .circle:hover{
-    cursor: pointer;
- }
+
+#second {
+    color: wheat;
+    padding-right: 10vw;
+    padding-left: 2vw;
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 10%;
+
+   
+}
+      
+
+.elem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    width: 100%;
+    padding: 2vw 1vw;
+    border-top: 1px solid #888;
+  
+   
+}
+.elem h1{
+    opacity: .5;
+    text-transform: uppercase;
+    font-size: 17vh;
+}
+
+
+.circle:hover{
+   cursor: pointer;
+}
+.elemlast{
+    border-bottom: 1px solid white;
+}
+.elem img{
+    height: 140%;
+    display: none;
+    z-index: 999;
+    position: absolute;
+   
+}
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    color: #fff;
+    padding: 10vw 10vw;
+    padding-left: 40vw;
+    width: 100%;
+    background-color: #000000;
+    /* height: auto; */
+}
+#about img{
+    width: 200px;
+    height: 5 vh;
+}
+#textarea h4{
+text-transform: uppercase;
+opacity: .6;
+}
+#textarea p{
+    width: fit-content;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+#textarea a{
+    padding: 8px 17px;
+   border: 1px solid #fff;
+   border-radius: 100px;
+   color:#fff;
+   text-decoration: none;
+   transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+
+
+}
+#textarea a:hover{
+    background-color: #fff;
+    color: #000000;
+}
