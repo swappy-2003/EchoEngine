@@ -94,10 +94,25 @@ var diffe=0;
 elem.addEventListener("mouseleave", function (dets) {
   // Target the image within the current ".elem"
   
-
+  gsap.to(elem.querySelector("h1"),{
+    opacity:.5,
+    paddingLeft:'0px',  
+    ease: "power2.Out"
+    
+    
+  })
+  gsap.to(elem.querySelector("h5"),{
+    opacity:.5,
+    
+    ease: "power2.Out"
+   
+    
+    
+  })
 
   // Use GSAP to animate the opacity of the image
   gsap.to( elem.querySelector("img"), {
+    // display: block,
     opacity: 0,
     ease: Power3,
     duration:0.5,
@@ -111,7 +126,18 @@ elem.addEventListener("mouseleave", function (dets) {
     diffe=dets.clientX-rotate;
     rotate= dets.clientX;
     // Target the image within the current ".elem"
-    
+    gsap.to(elem.querySelector("h1"),{
+      opacity:.2,
+      paddingLeft:'2.5%',
+      ease: "power2"
+      
+    })
+    gsap.to(elem.querySelector("h5"),{
+      opacity:.2,
+      
+      ease: "power2",
+      
+    })
 
 
     // Use GSAP to animate the opacity of the image
@@ -126,4 +152,20 @@ elem.addEventListener("mouseleave", function (dets) {
     // console.log(details.clientX, details.clientY);
   });
 });
+// Assuming there's a parent element containing all the circles with the ID "iconset"
+function scrollToBottom() {
+  window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
+
+document.querySelectorAll(".circle").forEach(function(circle) {
+  circle.addEventListener('click', scrollToBottom);
+});
+
+
+
+
+
+
+
+
 
